@@ -6,6 +6,3 @@ const loadData=()=>{
 .then(data=>console.log(data))
 
 }
-
-
-
