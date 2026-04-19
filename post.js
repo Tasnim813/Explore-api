@@ -10,12 +10,13 @@ const loadPost=()=>{
 
 const displayPost=(posts)=>{
     const postContainer=document.getElementById('post-container')
+    postContainer.innerHTML=' ';
     // console.log(postContainer)
     posts.forEach((post)=>{
         // console.log(post.title)
         const li=document.createElement('li')
         li.innerText=post.title;
-        console.log(li)
+        // console.log(li)
 
         postContainer.appendChild(li)
     })
