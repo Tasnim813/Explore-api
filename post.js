@@ -18,7 +18,7 @@ const displayPost=(posts)=>{
         li.innerText=post.title;
         // console.log(li)
 
-        postContainer.appendChild(li)
+        // postContainer.appendChild(li)
     })
     
 }
