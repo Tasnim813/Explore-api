@@ -9,16 +9,18 @@ const loadPost=()=>{
 }
 
 const displayPost=(posts)=>{
-    const postContainer=document.getElementById('post-container')
+    const postContainer=document.getElementById("post-container")
     postContainer.innerHTML=' ';
-    // console.log(postContainer)
     posts.forEach((post)=>{
-        // console.log(post.title)
-        const li=document.createElement('li')
-        li.innerText=post.title;
-        // console.log(li)
+        const postCard=document.createElement('div')
+        postCard.innerHTML=`
+         <div class="post-card">
+        <h2>${post.title}</h2>
+        <p>${post.body}</p>
 
-        // postContainer.appendChild(li)
+    </div>`;
+    postContainer.append(postCard)
     })
-    
+
 }
+loadPost()

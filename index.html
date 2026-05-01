@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #post-container{
+            max-width: 1160px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 20px;
+            row-gap: 20px;
+
+        }
+        .post-card{
+            border: 1px solid #ddd;
+            padding: 10px;
+            height: 100%;
+           
+        }
+    </style>
     
 </head>
 <body>
     <button onclick="loadPost()">Load Post</button>
     <button onclick="loadData()">Load data</button>
 
-    <ol id="post-container"></ol>
+   <div id="post-container">
+    <div class="post-card">
+        <h2>This is sample  title</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti consequatur iusto provident non, suscipit perferendis pariatur sunt. Dolorum, aliquam corporis? Suscipit perferendis soluta eligendi ex! Officia enim rem sapiente velit?</p>
+
+    </div>
+
+   </div>
     <script src="./script.js"></script>
     <script src="./post.js"></script>
 </body>
